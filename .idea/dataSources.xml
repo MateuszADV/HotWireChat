@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails HotWireChat: test" uuid="d460bbfb-db5d-4ca3-aa96-b03c57ec8c04">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/HotWireChat_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails HotWireChat: production" uuid="ed93efb4-552b-452d-a66b-bfc671bb13e0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/HotWireChat_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails HotWireChat: development" uuid="fde6f451-459b-44a6-8054-cfb830346b19">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/HotWireChat_development</jdbc-url>
+    </data-source>
+  </component>
+</project>
