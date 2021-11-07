@@ -14,6 +14,9 @@
 
 <div id="messages">
   <%= render @room.messages %>
+  <%#= @room.messages.each do |m| %>
+   <%#= m.id %>
+  <%# end %>
 </div>
 
 <%#=link_to "New Message", new_room_messages_path(@room) %>

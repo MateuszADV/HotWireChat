@@ -1,3 +1,4 @@
 <p id="<%=dom_id message %>" style="margin: 0">
   <%= message.created_at.to_s(:short) %>: <%=message.content %>
+  <%= link_to 'Destroy', destroy_path(message), method: :delete, remote: true, data: { confirm: 'Are you sure?' } %>
 </p>

@@ -8,6 +8,13 @@ class RoomsController < ApplicationController
 
   # GET /rooms/1 or /rooms/1.json
   def show
+    puts "444444444444444444444444444444444444444444444444444444"
+    puts params[:id]
+    @room = Room.find(params[:id])
+    @room.messages.each do |m|
+      puts m.inspect
+    end
+    puts "444444444444444444444444444444444444444444444444444444"
   end
 
   # GET /rooms/new
@@ -50,7 +57,8 @@ class RoomsController < ApplicationController
   # DELETE /rooms/1 or /rooms/1.json
   def destroy
     puts "**********************************************************"
-    @room.destroy
+    puts @room.inspect
+    # @room.destroy
     respond_to do |format|
       format.html { redirect_to rooms_url, notice: "Room was successfully destroyed." }
       format.json { head :no_content }
@@ -60,6 +68,8 @@ class RoomsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_room
+      puts "#############################################################################"
+      puts Room.find(params[:id])
       @room = Room.find(params[:id])
     end
 
